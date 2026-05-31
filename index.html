@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nathaniel Cavazos | Controls Engineering Portfolio</title>
 
     <style>
-
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -75,7 +73,14 @@
             transform: translateY(-2px);
         }
 
-        .projects {
+        .intro {
+            margin: 25px auto 0;
+            max-width: 720px;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        .projects, .current {
             margin-top: 40px;
             background-color: rgba(255,255,255,0.08);
             padding: 25px;
@@ -83,7 +88,7 @@
             text-align: left;
         }
 
-        .projects h3 {
+        .projects h3, .current h3 {
             text-align: center;
             margin-top: 0;
         }
@@ -91,6 +96,12 @@
         .projects ul {
             line-height: 2;
             font-size: 1.1rem;
+        }
+
+        .current p {
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 0;
         }
 
         .footer {
@@ -113,8 +124,13 @@
             color: #C6C5B9;
         }
 
-        @media (max-width: 768px) {
+        .copyright {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #C6C5B9;
+        }
 
+        @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
             }
@@ -129,16 +145,12 @@
                 max-width: 250px;
             }
         }
-
     </style>
 </head>
 
 <body>
-
 <div class="container">
-
     <div class="hero">
-
         <h1>Nathaniel Cavazos</h1>
 
         <h2>
@@ -154,56 +166,49 @@
         <hr>
 
         <div class="button-container">
-
-            <a class="button" href="portfolio.pdf" target="_blank">
-                View Portfolio
-            </a>
-
-            <a class="button" href="resume1.pdf" target="_blank">
-                View Resume
-            </a>
-
-            <a class="button"
-               href="https://www.linkedin.com/in/nathanielcavazos2007"
-               target="_blank">
-                LinkedIn
-            </a>
-
+            <a class="button" href="portfolio.pdf" target="_blank">View Portfolio</a>
+            <a class="button" href="resume1.pdf" target="_blank">View Resume</a>
+            <a class="button" href="https://www.linkedin.com/in/nathanielcavazos2007" target="_blank">LinkedIn</a>
         </div>
 
+        <p class="intro">
+            View my resume and project portfolio highlighting PLC automation,
+            embedded systems, industrial communication, and engineering design work.
+        </p>
+
         <div class="projects">
-
             <h3>Featured Projects</h3>
-
             <ul>
-                <li>Embedded Telemetry Ground Station</li>
-                <li>Water Tank PLC Automation System</li>
-                <li>Gear Drive Performance Comparison Study (In Progress)</li>
+                <li><strong>Embedded Telemetry Ground Station</strong> — wireless telemetry and Simulink visualization</li>
+                <li><strong>Water Tank PLC Automation System</strong> — PLC logic, HMI control, alarms, and safety features</li>
+                <li><strong>Gear Drive Performance Comparison Study</strong> — in-progress torque testing with motor, encoder, and load cell</li>
             </ul>
+        </div>
 
+        <div class="current">
+            <h3>Currently Building</h3>
+            <p>
+                Gear drive performance comparison test stand for evaluating
+                cycloidal, harmonic, and planetary drive torque output,
+                backlash, and mechanical performance.
+            </p>
         </div>
 
         <div class="footer">
-
-            Portfolio showcasing personal projects in
-            PLC programming, industrial automation,
-            embedded systems, and engineering design.
+            Portfolio showcasing personal projects in PLC programming,
+            industrial automation, embedded systems, and engineering design.
 
             <div class="contact">
-
-                📧 nathaniel.cavazos.me@gmail.com<br>
-
-                📱 +1 (661) 778-8069<br>
-
-                🌐 nathaniel-cavazos.com
-
+                Email: <a href="mailto:nathaniel.cavazos.me@gmail.com">nathaniel.cavazos.me@gmail.com</a><br>
+                Phone: <a href="tel:+16617788069">+1 (661) 778-8069</a><br>
+                Portfolio: <a href="https://nathaniel-cavazos.com">nathaniel-cavazos.com</a>
             </div>
 
+            <div class="copyright">
+                © 2026 Nathaniel Cavazos
+            </div>
         </div>
-
     </div>
-
 </div>
-
 </body>
 </html>
