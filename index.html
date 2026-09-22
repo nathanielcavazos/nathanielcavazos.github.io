@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <style>
+
+        /* ========================================
+           PAGE
+        ======================================== */
 
         body {
             margin: 0;
@@ -29,6 +37,11 @@
             margin: auto;
             padding: 40px 20px;
         }
+
+
+        /* ========================================
+           LOGO / HEADER
+        ======================================== */
 
         .site-header {
             display: flex;
@@ -50,6 +63,11 @@
             letter-spacing: -0.3px;
         }
 
+
+        /* ========================================
+           HERO
+        ======================================== */
+
         .hero {
             background-color: #2C363E;
             border-radius: 4px;
@@ -57,55 +75,42 @@
             text-align: center;
             box-shadow: 0px 10px 25px rgba(0,0,0,0.35);
         }
+
         .hero-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px;
-    margin-bottom: 25px;
-}
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 60px;
+            margin-bottom: 25px;
+        }
 
-.hero-text {
-    flex: 1;
-    text-align: center;
-}
+        .hero-text {
+            flex: 1;
+            text-align: center;
+        }
 
-.hero-photo {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 2px solid rgba(255,255,255,.15);
-    box-shadow: 0 10px 25px rgba(0,0,0,.35);
-    flex-shrink: 0;
-}
+        .hero-text h1 {
+            margin-top: 0;
+        }
 
-.hero-text h1{
-    margin-top:0;
-}
+        .hero-text h2 {
+            margin-bottom: 0;
+        }
 
-.hero-text h2{
-    margin-bottom:0;
-}
+        .hero-photo {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 2px solid rgba(255,255,255,0.15);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+            flex-shrink: 0;
+        }
 
-@media (max-width:768px){
 
-    .hero-top{
-        flex-direction:column;
-        text-align:center;
-        gap:30px;
-    }
-
-    .hero-text{
-        text-align:center;
-    }
-
-    .hero-photo{
-        width:180px;
-        height:225px;
-    }
-
-}
+        /* ========================================
+           TEXT
+        ======================================== */
 
         h1 {
             font-family: 'Space Grotesk', sans-serif;
@@ -123,6 +128,7 @@
             margin-top: 0;
             line-height: 1.5;
         }
+
         .subtitle {
             font-family: 'Inter', sans-serif;
             margin-top: 25px;
@@ -131,6 +137,19 @@
             color: #8FB6AC;
         }
 
+        .intro {
+            margin: 25px auto 0;
+            max-width: 720px;
+            color: #C7D0D4;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+
+        /* ========================================
+           DIVIDER
+        ======================================== */
+
         hr {
             border: none;
             height: 1px;
@@ -138,6 +157,11 @@
             margin: 35px auto;
             width: 95%;
         }
+
+
+        /* ========================================
+           BUTTONS
+        ======================================== */
 
         .button-container {
             margin-top: 30px;
@@ -161,13 +185,10 @@
             transform: translateY(-2px);
         }
 
-        .intro {
-            margin: 25px auto 0;
-            max-width: 720px;
-            color: #C7D0D4;
-            line-height: 1.6;
-            font-size: 1rem;
-        }
+
+        /* ========================================
+           PROJECT SECTIONS
+        ======================================== */
 
         .projects,
         .current {
@@ -197,43 +218,36 @@
         .projects li {
             margin-bottom: 8px;
         }
-        .project-grid{
-    display:flex;
-    gap:30px;
-    margin-top:40px;
-}
 
-.project-grid .projects,
-.project-grid .current{
-    flex:1;
-    margin-top:0;
-}
+        .project-grid {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
 
-.project-grid ul{
-    line-height:1.9;
-    padding-left:22px;
-}
+        .project-grid .projects,
+        .project-grid .current {
+            flex: 1;
+            margin-top: 0;
+        }
 
-.project-grid li{
-    margin-bottom:16px;
-}
+        .project-grid ul {
+            line-height: 1.9;
+            padding-left: 22px;
+        }
 
-.current ul{
-    line-height:1.9;
-    padding-left:22px;
-}
+        .project-grid li {
+            margin-bottom: 16px;
+        }
 
-.current li{
-    margin-bottom:16px;
-}
+        .current ul {
+            line-height: 1.9;
+            padding-left: 22px;
+        }
 
-@media(max-width:768px){
-
-    .project-grid{
-        flex-direction:column;
-    }
-
-}
+        .current li {
+            margin-bottom: 16px;
+        }
 
         .current p {
             line-height: 1.6;
@@ -242,6 +256,11 @@
             font-size: 1rem;
             color: #C7D0D4;
         }
+
+
+        /* ========================================
+           FOOTER
+        ======================================== */
 
         .footer {
             margin-top: 35px;
@@ -270,7 +289,57 @@
             color: #7C8B91;
         }
 
+
+        /* ========================================
+           MOBILE
+        ======================================== */
+
         @media (max-width: 768px) {
+
+            .container {
+                padding: 20px 12px;
+            }
+
+            .site-header {
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 30px 20px;
+            }
+
+            /*
+                IMPORTANT MOBILE FIX:
+                Once the hero becomes a vertical column,
+                align-items:center centers the headshot.
+            */
+
+            .hero-top {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 30px;
+                width: 100%;
+            }
+
+            .hero-text {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-photo {
+                width: 180px;
+                height: 225px;
+
+                /*
+                    Extra centering safeguard
+                */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                align-self: center;
+            }
 
             h1 {
                 font-size: 2.8rem;
@@ -280,8 +349,8 @@
                 font-size: 1rem;
             }
 
-            .hero {
-                padding: 30px;
+            .subtitle {
+                font-size: 1.05rem;
             }
 
             .button {
@@ -290,152 +359,311 @@
                 max-width: 250px;
             }
 
+            .project-grid {
+                flex-direction: column;
+            }
+
             .projects h3,
             .current h3 {
                 font-size: 1.3rem;
             }
+
         }
 
     </style>
+
 </head>
+
 
 <body>
 
 <div class="container">
 
+
+    <!-- ========================================
+         LOGO
+    ========================================= -->
+
     <div class="site-header">
-        <img src="favicon1.png" alt="Nathaniel Cavazos logo">
+
+        <img
+            src="favicon1.png"
+            alt="Nathaniel Cavazos logo"
+        >
+
     </div>
+
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
 
     <div class="hero">
 
+
         <div class="hero-top">
 
-    <div class="hero-text">
 
-        <h1>Nathaniel Cavazos</h1>
+            <!-- NAME / INFORMATION -->
 
-        <h2>
-            B.S. Mechanical Engineering Student<br>
-            California State University, Long Beach<br>
-            Graduating May 2028 | GPA 3.57
-        </h2>
+            <div class="hero-text">
 
-        <p class="subtitle">
-            Controls • Robotics • Structural Optimization
-        </p>
+                <h1>
+                    Nathaniel Cavazos
+                </h1>
 
-    </div>
+                <h2>
 
-    <img
-        src="headshot.jpg"
-        alt="Nathaniel Cavazos"
-        class="hero-photo">
+                    B.S. Mechanical Engineering Student
+                    <br>
 
-</div>
+                    California State University, Long Beach
+                    <br>
 
-<hr>
+                    Graduating May 2028 | GPA 3.57
+
+                </h2>
+
+
+                <p class="subtitle">
+
+                    Controls • Robotics • Structural Optimization
+
+                </p>
+
+            </div>
+
+
+            <!-- HEADSHOT -->
+
+            <img
+                src="headshot.jpg"
+                alt="Nathaniel Cavazos"
+                class="hero-photo"
+            >
+
+
+        </div>
+
+
+        <hr>
+
+
+        <!-- ========================================
+             MAIN LINKS
+        ========================================= -->
 
         <div class="button-container">
 
-            <a class="button" href="portfolio.pdf" target="_blank">
+
+            <!-- PORTFOLIO -->
+
+            <a
+                class="button"
+                href="portfolio.pdf"
+                target="_blank"
+            >
                 View Portfolio
             </a>
 
-            <a class="button" href="resume1.pdf" target="_blank">
+
+            <!-- RESUME -->
+
+            <a
+                class="button"
+                href="resume1.pdf"
+                target="_blank"
+            >
                 View Resume
             </a>
 
-            <a class="button"
-               href="https://www.linkedin.com/in/nathanielcavazos2007"
-               target="_blank">
+
+            <!-- LINKEDIN -->
+
+            <a
+                class="button"
+                href="https://www.linkedin.com/in/nathanielcavazos2007"
+                target="_blank"
+            >
                 LinkedIn
             </a>
 
+
+            <!-- INSTAGRAM -->
+
+            <a
+                class="button"
+                href="https://www.instagram.com/nathaniel.engineering/"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+
         </div>
 
+
+        <!-- ========================================
+             INTRO
+        ========================================= -->
+
         <p class="intro">
+
             View my resume and project portfolio highlighting mechanical design,
             robotics, embedded systems, controls, and engineering analysis.
+
         </p>
+
+
+        <!-- ========================================
+             PROJECT GRID
+        ========================================= -->
 
         <div class="project-grid">
 
-    <div class="projects">
 
-        <h3>Featured Projects</h3>
+            <!-- FEATURED PROJECTS -->
 
-        <ul>
+            <div class="projects">
 
-            <li>
-                <strong>Gearbox Performance Analysis</strong><br>
-                Torque testing different drives using load cell analysis and live scope data.
-            </li>
+                <h3>
+                    Featured Projects
+                </h3>
 
-        </ul>
 
-    </div>
+                <ul>
 
-    <div class="current">
+                    <li>
 
-        <h3>Currently Building</h3>
+                        <strong>
+                            Gearbox Performance Analysis
+                        </strong>
 
-        <ul>
+                        <br>
 
-            <li>
-                <strong>6 Degree of Freedom Robotic Arm</strong>
-                In progress: Structural optimization & analysis following strict PETG material properties.
-            </li>
+                        Torque testing different drives using load cell analysis
+                        and live scope data.
 
-        </ul>
+                    </li>
 
-    </div>
+                </ul>
 
-</div>
+            </div>
 
-        <div class="current">
 
-            <h3>Currently Building</h3>
+            <!-- CURRENT PROJECT -->
 
-            <p>
-                I am currently developing a 6-DOF robotic arm that brings together mechanical design, robotics, controls, and automation, following strict material properties and manufacturing processes. I am using ANSYS to optimize the structure, MATLAB and the Robotics System Toolbox for the kinematics
-                and control, and eventually Ignition SCADA to monitor and control the full system.
-            </p>
+            <div class="current">
+
+                <h3>
+                    Currently Building
+                </h3>
+
+
+                <ul>
+
+                    <li>
+
+                        <strong>
+                            6 Degree of Freedom Robotic Arm
+                        </strong>
+
+                        <br>
+
+                        In progress: Structural optimization & analysis following
+                        strict PETG material properties.
+
+                    </li>
+
+                </ul>
+
+            </div>
+
 
         </div>
 
+
+        <!-- ========================================
+             CURRENT PROJECT DESCRIPTION
+        ========================================= -->
+
+        <div class="current">
+
+
+            <h3>
+                Currently Building
+            </h3>
+
+
+            <p>
+
+                I am currently developing a 6-DOF robotic arm that brings together
+                mechanical design, robotics, controls, and automation, following
+                strict material properties and manufacturing processes.
+
+                I am using ANSYS to optimize the structure, MATLAB and the
+                Robotics System Toolbox for the kinematics and control, and
+                eventually Ignition SCADA to monitor and control the full system.
+
+            </p>
+
+
+        </div>
+
+
+        <!-- ========================================
+             FOOTER
+        ========================================= -->
+
         <div class="footer">
+
 
             <div class="contact">
 
+
                 Email:
+
                 <a href="mailto:nathaniel.cavazos.me@gmail.com">
                     nathaniel.cavazos.me@gmail.com
                 </a>
+
                 <br>
 
+
                 Phone:
+
                 <a href="tel:+16617788069">
                     +1 (661) 778-8069
                 </a>
+
                 <br>
 
+
                 Portfolio:
+
                 <a href="https://nathaniel-cavazos.com">
                     nathaniel-cavazos.com
                 </a>
 
+
             </div>
 
+
             <div class="copyright">
+
                 © 2026 Nathaniel Cavazos.
+
             </div>
+
 
         </div>
 
+
     </div>
+
 
 </div>
 
 </body>
+
 </html>
