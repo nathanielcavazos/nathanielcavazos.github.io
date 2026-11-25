@@ -420,14 +420,14 @@
                     California State University, Long Beach
                     <br>
 
-                    Graduating May 2028 | GPA 3.57
+                    Graduating Fall 2028 | GPA 3.57
 
                 </h2>
 
 
                 <p class="subtitle">
 
-                    Controls • Robotics • Structural Optimization
+                    Aerospace Controls • Robotics • Structural Optimization • Propulsion
 
                 </p>
 
@@ -460,7 +460,7 @@
 
             <a
                 class="button"
-                href="portfolio.pdf"
+                href="Portfolio.pdf"
                 target="_blank"
             >
                 View Portfolio
@@ -510,7 +510,7 @@
         <p class="intro">
 
             View my resume and project portfolio highlighting mechanical design,
-            robotics, embedded systems, controls, and engineering analysis.
+            robotics, controls, propulsion, and engineering analysis.
 
         </p>
 
@@ -532,6 +532,13 @@
                         Mechanical design, structural optimization, and kinematic analysis using
                         SOLIDWORKS, ANSYS, and MATLAB's Robotics System Toolbox.
                     </li>
+                    <li>
+                        <strong>Cold-Gas Thruster Anaylsis| V1: Parabolic Bell Nozzle Algorithm</strong>
+                        <br>
+                        Coded in MATLAB, integrating NASA's Chemical Equilibrium with Applications 
+                        in MATLAB (CEAM) software. Finding the best geometry and streamlining 
+                        CFD analysis.
+                    </li>
                 </ul>
             </div>
 
@@ -540,10 +547,12 @@
                 <h3>Planned Projects</h3>
                 <ul>
                     <li>
-                        <strong>Airfoil Wind Tunnel</strong>
+                        <strong>Cold-Gas Thruster Analysis | V2</strong>
                         <br>
-                        Planned development of a small-scale wind tunnel to study airflow around
-                        different airfoil geometries using experimental testing and CFD analysis.
+                        Planned analysis of 5 separate nozzle geometries with different liquid 
+                        bipropellant mixtures taken from CEAM at similar nominal conditions 
+                        in ANSYS Fluent using the XYZ coordinates automatically exported from 
+                        the MATLAB algorithm.
                     </li>
                 </ul>
             </div>
@@ -554,15 +563,17 @@
              FEATURED PROJECT DESCRIPTION
         ========================================= -->
         <div class="current">
-            <h3>Featured Project: 6-DOF Robotic Arm</h3>
+            <h3>Featured Project: V1 of the Cold-Gas Thruster Analysis</h3>
             <p>
-                For Version 1, I designed and optimized a 6-DOF robotic arm using
-                SOLIDWORKS and ANSYS, focusing on structural performance, weight
-                reduction, and manufacturability. I also developed a kinematic model
-                in MATLAB, performed Jacobian analysis for the complete arm, and
-                simulated the movement of joints J1 through J4 using Robotics System
-                Toolbox. Future versions will focus on physical assembly, actuator
-                integration, and end-effector development.
+                This project was coded in MATLAB and integrated with NASA's Chemical Equilibrium 
+                with Applications in MATLAB (CEAM) software to compute combustion thermodynamic 
+                data. This algorithm takes user-defined geometry ranges (throat/exit radii, 
+                expansion ratios), ideal thrust, chamber scale, and gas reservoir parameters. 
+                It evaluates 2,000+ geometries via 1-dimensional isentropic flow analysis, 
+                filters down to a single optimal nozzle, prints flow results to the MATLAB 
+                terminal, generates three figures (nozzle optimization, flow profiles, and transient 
+                performance), and exports geometry data for ANSYS Fluent. Next, I will validate the 
+                performance metrics in a 2D ANSYS Fluent flow simulation using matching parameters.
             </p>
         </div>
 
